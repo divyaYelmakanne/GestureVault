@@ -1,0 +1,37 @@
+{
+  "name": "gesturevault-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for GestureVault - Gesture-based authentication system",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/public",
+    "build": "echo 'No build step required for vanilla JS'",
+    "dev": "live-server --port=3000 --open=/public --watch=src",
+    "lint": "eslint src/",
+    "test": "echo 'No tests configured yet'"
+  },
+  "keywords": [
+    "gesture",
+    "authentication",
+    "mediapipe",
+    "tensorflow",
+    "security"
+  ],
+  "author": "GestureVault Team",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "eslint": "^8.47.0"
+  },
+  "dependencies": {
+    "@mediapipe/camera_utils": "^0.3.1675466862",
+    "@mediapipe/control_utils": "^0.6.1675466862",
+    "@mediapipe/drawing_utils": "^0.3.1675466862",
+    "@mediapipe/hands": "^0.4.1675469240",
+    "@tensorflow/tfjs": "^4.10.0",
+    "socket.io-client": "^4.7.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+} 
